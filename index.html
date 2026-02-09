@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govt Polytechnic Siddipet</title>
+    <!-- Importing Tailwind CSS for styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* A subtle background image for the hero section */
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen font-sans text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-[#0A2540] text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex items-center gap-3 mb-4 sm:mb-0">
+                <!-- Simple Logo Placeholder -->
+                <div class="bg-white text-[#0A2540] font-bold rounded-full h-10 w-10 flex items-center justify-center text-xl">
+                    GP
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold uppercase tracking-wide">Govt Polytechnic</h1>
+                    <p class="text-sm text-[#4DA8DA]">Siddipet</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 font-medium items-center">
+                    <li><a href="#" class="hover:text-[#F4C430] transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-[#F4C430] transition-colors">About Us</a></li>
+                    <li><a href="#courses" class="hover:text-[#F4C430] transition-colors">Courses</a></li>
+                    <li><a href="#login" class="bg-[#F4C430] text-[#0A2540] font-bold hover:bg-[#d9ae27] px-4 py-2 rounded-md transition-colors shadow-sm">Login Portals</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        
+        <!-- Hero Section -->
+        <section class="hero-bg h-80 relative flex items-center justify-center">
+            <!-- Dark overlay to make text readable -->
+            <div class="absolute inset-0 bg-[#0A2540] opacity-70"></div>
+            <div class="relative z-10 text-center text-white px-4">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg">Welcome to Govt Polytechnic Siddipet</h2>
+                <p class="text-xl md:text-2xl font-light max-w-2xl mx-auto drop-shadow-md">Empowering the next generation of engineers and innovators with quality technical education.</p>
+            </div>
+        </section>
+
+        <!-- Login Portals Section -->
+        <section id="login" class="max-w-6xl mx-auto py-16 px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-[#0A2540] mb-2">Campus Access Portals</h3>
+                <p class="text-gray-600">Please login to your respective portal to access your dashboard.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center gap-8 items-stretch">
+                
+                <!-- Student Login Card -->
+                <div class="bg-white rounded-xl shadow-lg w-full md:w-1/2 max-w-md overflow-hidden border border-gray-200 flex flex-col">
+                    <div class="bg-[#0A2540] text-white py-4 text-center">
+                        <svg class="w-10 h-10 mx-auto mb-2 text-[#F4C430]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+                        <h4 class="text-xl font-bold">Student Login</h4>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <form action="#" method="GET">
+                            <div class="mb-5">
+                                <label for="student-id" class="block text-sm font-medium text-gray-700 mb-1">PIN Number / Student ID</label>
+                                <input type="text" id="student-id" placeholder="Enter your PIN No" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0A2540] focus:border-[#0A2540] outline-none" required>
+                            </div>
+                            <div class="mb-5">
+                                <label for="student-pass" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                                <input type="password" id="student-pass" placeholder="••••••••" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0A2540] focus:border-[#0A2540] outline-none" required>
+                            </div>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="student-remember" class="h-4 w-4 text-[#0A2540] border-gray-300 rounded focus:ring-[#0A2540]">
+                                    <label for="student-remember" class="ml-2 block text-sm text-gray-700">Remember me</label>
+                                </div>
+                                <a href="#" class="text-sm text-[#4DA8DA] font-medium hover:text-[#0A2540]">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="w-full bg-[#F4C430] hover:bg-[#d9ae27] text-[#0A2540] font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                                Login as Student
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Teacher Login Card -->
+                <div class="bg-white rounded-xl shadow-lg w-full md:w-1/2 max-w-md overflow-hidden border border-gray-200 flex flex-col">
+                    <div class="bg-[#4DA8DA] text-[#0A2540] py-4 text-center">
+                        <svg class="w-10 h-10 mx-auto mb-2 text-[#0A2540]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <h4 class="text-xl font-bold">Teacher / Staff Login</h4>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <form action="#" method="GET">
+                            <div class="mb-5">
+                                <label for="teacher-id" class="block text-sm font-medium text-gray-700 mb-1">Employee ID</label>
+                                <input type="text" id="teacher-id" placeholder="Enter your Employee ID" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#4DA8DA] focus:border-[#4DA8DA] outline-none" required>
+                            </div>
+                            <div class="mb-5">
+                                <label for="teacher-pass" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                                <input type="password" id="teacher-pass" placeholder="••••••••" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#4DA8DA] focus:border-[#4DA8DA] outline-none" required>
+                            </div>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="teacher-remember" class="h-4 w-4 text-[#4DA8DA] border-gray-300 rounded focus:ring-[#4DA8DA]">
+                                    <label for="teacher-remember" class="ml-2 block text-sm text-gray-700">Remember me</label>
+                                </div>
+                                <a href="#" class="text-sm text-[#4DA8DA] font-medium hover:text-[#0A2540]">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="w-full bg-[#0A2540] hover:bg-[#071a2d] text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                                Login as Teacher
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Brief About Section -->
+        <section id="about" class="bg-white py-12 border-t border-gray-200">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h3 class="text-2xl font-bold text-[#0A2540] mb-4">About Govt Polytechnic Siddipet</h3>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Located in the heart of Siddipet, Govt Polytechnic is dedicated to providing excellence in technical education. We offer modern infrastructure, experienced faculty, and strong industry connections to ensure our students are well-prepared for their professional careers.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left mt-8">
+                    <div class="p-5 bg-gray-50 border-l-4 border-[#0A2540] rounded-r-lg shadow-sm">
+                        <h4 class="font-bold text-[#0A2540] text-xl mb-2">Expert Faculty</h4>
+                        <p class="text-sm text-gray-600">Learn from highly qualified professionals.</p>
+                    </div>
+                    <div class="p-5 bg-gray-50 border-l-4 border-[#4DA8DA] rounded-r-lg shadow-sm">
+                        <h4 class="font-bold text-[#0A2540] text-xl mb-2">Modern Labs</h4>
+                        <p class="text-sm text-gray-600">Hands-on experience with the latest equipment.</p>
+                    </div>
+                    <div class="p-5 bg-gray-50 border-l-4 border-[#F4C430] rounded-r-lg shadow-sm">
+                        <h4 class="font-bold text-[#0A2540] text-xl mb-2">Placements</h4>
+                        <p class="text-sm text-gray-600">Excellent track record of campus recruitment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="bg-gray-50 py-16 border-t border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <h3 class="text-3xl font-bold text-[#0A2540] mb-4">Courses Offered</h3>
+                <p class="text-gray-600 mb-12">Govt Polytechnic Siddipet offers specialized diploma programs designed to build strong foundations in modern engineering.</p>
+                
+                <div class="flex flex-col md:flex-row justify-center gap-8 items-stretch">
+                    
+                    <!-- CSE Course Card -->
+                    <div class="bg-white rounded-xl shadow-md w-full md:w-1/2 max-w-md overflow-hidden border border-gray-200 flex flex-col hover:shadow-lg transition-shadow">
+                        <div class="bg-[#0A2540] text-white py-6 text-center border-b-4 border-[#F4C430]">
+                            <h4 class="text-3xl font-bold tracking-wider">CSE</h4>
+                            <p class="text-[#4DA8DA] mt-1 font-medium">Computer Science Engineering</p>
+                        </div>
+                        <div class="p-8 flex-grow text-left">
+                            <p class="text-gray-600 mb-6 leading-relaxed">The CSE department focuses on the basics of computer programming, networking, and software development. Students learn to design, build, and test software applications and systems.</p>
+                            <h5 class="font-bold text-[#0A2540] mb-3 border-b pb-2">Key Topics Covered:</h5>
+                            <ul class="text-sm text-gray-600 space-y-2 list-none">
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#F4C430]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Programming Languages (C, Java, Python)</li>
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#F4C430]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Web Development & Database Management</li>
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#F4C430]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Computer Networks & Cyber Security</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ECE Course Card -->
+                    <div class="bg-white rounded-xl shadow-md w-full md:w-1/2 max-w-md overflow-hidden border border-gray-200 flex flex-col hover:shadow-lg transition-shadow">
+                        <div class="bg-[#4DA8DA] text-[#0A2540] py-6 text-center border-b-4 border-[#F4C430]">
+                            <h4 class="text-3xl font-bold tracking-wider">ECE</h4>
+                            <p class="text-[#0A2540] mt-1 font-semibold opacity-80">Electronics & Communication Engineering</p>
+                        </div>
+                        <div class="p-8 flex-grow text-left">
+                            <p class="text-gray-600 mb-6 leading-relaxed">The ECE department deals with electronic devices, circuits, and communication equipment. It provides a blend of hardware and software knowledge for modern technology.</p>
+                            <h5 class="font-bold text-[#0A2540] mb-3 border-b pb-2">Key Topics Covered:</h5>
+                            <ul class="text-sm text-gray-600 space-y-2 list-none">
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#4DA8DA]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Digital Electronics & Microprocessors</li>
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#4DA8DA]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Analog & Digital Communication Systems</li>
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#4DA8DA]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Embedded Systems & IoT</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#0A2540] text-gray-300 py-8 text-center border-t-4 border-[#F4C430]">
+        <div class="max-w-6xl mx-auto px-4">
+            <h4 class="text-xl font-bold text-white mb-2">Govt Polytechnic</h4>
+            <p class="mb-4">Siddipet District, Telangana State</p>
+            <div class="flex justify-center space-x-4 mb-6">
+                <a href="#" class="text-gray-400 hover:text-[#F4C430] transition-colors">Contact Us</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="text-gray-400 hover:text-[#F4C430] transition-colors">Privacy Policy</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="text-gray-400 hover:text-[#F4C430] transition-colors">Terms of Service</a>
+            </div>
+            <p class="text-sm text-gray-500">&copy; 2023 Govt Polytechnic Siddipet. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
